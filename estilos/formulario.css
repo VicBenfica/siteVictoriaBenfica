@@ -1,0 +1,24 @@
+html{
+    font-family: "Homemade Apple", cursive;
+    font-style: normal;
+    font-size: 15px;
+    background-color: #FFC2D1;
+}
+
+
+input{
+    border-radius: 10%;
+    margin-right: 10px;
+}
+ a{
+   color: #eb5baf;
+   text-decoration: none;
+ }
+ form{
+    max-width: 400px;
+    margin: 50px 30px 50px 20px;
+    background: #FFC2D1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #cc496a;
+ }

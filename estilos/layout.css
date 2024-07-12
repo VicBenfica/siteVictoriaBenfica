@@ -1,0 +1,106 @@
+html{
+    font-family: "Homemade Apple", cursive;
+    font-style: normal;
+    font-size: 15px;
+    background-color: #FFC2D1;
+}
+.principal{
+
+    width: 100%; 
+    padding: 15px;
+    display: grid; 
+    gap:5px;
+    grid-template-areas: "main main aside"
+                         "main main aside"
+                         "main main aside";
+}
+aside{
+    grid-area: aside;
+    font-size: 13px;
+}
+    
+main{
+    grid-area: main;
+    font-size: 16px;
+    text-align:left;
+    margin: 10px;
+}
+nav{
+    grid-area: nav;
+    padding: 10px 0 10px 30px;
+
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    
+ }
+ button{
+    color:burlywood ; 
+ }
+ a{
+   color: #eb5baf;
+   text-decoration: none;
+ }
+ .foto{
+    border-radius: 100%;
+    width: 150px;
+    border: 2px solid rgb(255, 175, 204);
+    padding: 10px;
+ }
+
+ 
+ @media(max-width:992px){
+    .principal{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "main main aside"
+        "main main aside"
+        "main main aside";
+        text-align: center;
+    }
+    
+    footer{
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+    }
+}
+@media(max-width:760px){
+    .principal{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "main main aside"
+        "main main aside"
+        "main main aside";
+        text-align: center;
+    }
+    body{
+    font-size: 9px;
+    }
+}
+@media(max-width:750px){
+    .principal{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "main main main"
+        "aside aside aside"
+        "aside aside aside";
+        text-align: center;
+    }
+    body{
+    font-size: 9px;
+    }
+}
+@media(max-width:500px){
+    .principal{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "main main main"
+        "aside aside aside"
+        "aside aside aside";
+        text-align: center;
+    }
+    body{
+    font-size: 9px;
+    }
+}
